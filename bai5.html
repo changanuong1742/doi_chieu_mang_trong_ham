@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+        var ten1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        var ten2 = ['Ursa', 'Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa', 'Major', 'Leo'];
+
+        function chomsao() {
+            let nhap_ten = document.getElementById("nhap_du_lieu").value;
+            for (let i = 0; i < ten1.length; i++) {
+                if (nhap_ten === ten1[i]) {
+                    document.getElementById("show").innerHTML = ten1[i] + " Chòm Sao: " + ten2[i];
+                } else {
+                    document.getElementById("show").innerHTML = "Nhập Lại";
+                }
+                break;
+            }
+        }
+
+
+    </script>
+
+</head>
+<body>
+<input id="nhap_du_lieu">
+<p id="show"></p>
+<button id="nhan_nut" onclick="chomsao()">Nhấn Nút</button>
+
+</body>
+</html>

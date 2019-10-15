@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+        function sosanh() {
+            let nhap_so_1 = document.getElementById("nhap_so_1").value;
+            let nhap_so_2 = document.getElementById("nhap_so_2").value;
+
+            if(nhap_so_1>nhap_so_2){
+                document.getElementById("show").innerHTML = 'Số thứ nhất lớn hơn số thứ Hai';
+            } else {
+                if (nhap_so_1<nhap_so_2){
+                    document.getElementById("show").innerHTML = 'Số thứ nhất nhỏ hơn số thứ Hai';
+                } else {
+                    document.getElementById("show").innerHTML = 'Số thứ nhất bẳng số thứ Hai';
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+<input id="nhap_so_1">
+<input id="nhap_so_2">
+<p id="show"></p>
+<button id="bam_nut" onclick="sosanh()">So Sánh</button>
+</body>
+</html>
